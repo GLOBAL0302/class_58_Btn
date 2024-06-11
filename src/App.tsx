@@ -34,6 +34,7 @@ const App = () =>{
       </div>
       <div className="myAlert col-6">
         {showAlert?(<Alert
+          onDismiss={closeAlert}
           type={"warning"}
         >This is a warning alert</Alert>):""}
         <button onClick={()=>setShowAlert(true)}>Alert</button>

@@ -1,0 +1,39 @@
+
+
+
+
+.modalAnimation.entering{
+  animation: myAnimation .5s forwards;
+  display: block;
+
+}
+
+.modalAnimation.entered{
+  display: block;
+}
+
+.modalAnimation.exiting{
+  animation: myAnimation 0.6s reverse;
+  display: block;
+  transform: translateY(-210px);
+}
+.modalAnimation.exited{
+
+}
+
+
+@keyframes myAnimation {
+  0%{
+    transform: translateY(-210px);
+
+  }
+
+  50%{
+
+
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
